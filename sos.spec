@@ -1,7 +1,7 @@
 Summary: A set of tools to gather troubleshooting information from a system
 Name: sos
 Version: 2.2
-Release: %mkrel 1
+Release: %mkrel 2
 Group: System/Base
 Source0: https://fedorahosted.org/releases/s/o/sos/%{name}-%{version}.tar.gz
 License: GPLv2+
