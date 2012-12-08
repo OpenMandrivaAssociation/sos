@@ -1,7 +1,7 @@
 Summary: A set of tools to gather troubleshooting information from a system
 Name: sos
 Version: 2.2
-Release: %mkrel 2
+Release: 4
 Group: System/Base
 Source0: https://fedorahosted.org/releases/s/o/sos/%{name}-%{version}.tar.gz
 License: GPLv2+
@@ -28,19 +28,30 @@ support technicians and developers.
 make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 %find_lang %{name}
 
-%clean
-rm -rf %{buildroot}
+# Drop shebang from non-executable scripts to make rpmlint happy
+find %{buildroot}%{py_puresitedir} -name "*py" -perm 644 -exec sed -i '/#!\/usr\/bin\/env python/d' {} \;
+
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
 %doc README TODO LICENSE ChangeLog doc/*
 %{_sbindir}/sosreport
 %{_datadir}/%{name}
-%{python_sitelib}/*
+%{py_puresitedir}/*
 %{_mandir}/man1/*
 %{_mandir}/man5/*
 %config(noreplace) %{_sysconfdir}/sos.conf
+
+
+%changelog
+* Fri May 06 2011 Oden Eriksson <oeriksson@mandriva.com> 2.2-2mdv2011.0
++ Revision: 669997
+- mass rebuild
+
+* Thu Dec 02 2010 Funda Wang <fwang@mandriva.org> 2.2-1mdv2011.0
++ Revision: 604670
+- import sos
+
