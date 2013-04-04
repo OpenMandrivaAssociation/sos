@@ -31,10 +31,6 @@ make
 %makeinstall_std
 %find_lang %{name}
 
-# Drop shebang from non-executable scripts to make rpmlint happy
-find %{buildroot}%{py_puresitedir} -name "*py" -perm 644 -exec sed -i '/#!\/usr\/bin\/env python/d' {} \;
-
-
 %files -f %{name}.lang
 %defattr(-,root,root,-)
 %doc README TODO LICENSE ChangeLog doc/*
