@@ -1,0 +1,2 @@
+# For builds outside the build system
+addFilter("E: script-without-shebang")

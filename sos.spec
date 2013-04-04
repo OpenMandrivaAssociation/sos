@@ -4,6 +4,7 @@ Version: 2.2
 Release: 4
 Group: System/Base
 Source0: https://fedorahosted.org/releases/s/o/sos/%{name}-%{version}.tar.gz
+Source100:	sos.rpmlintrc
 License: GPLv2+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
