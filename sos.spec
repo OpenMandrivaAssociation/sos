@@ -1,7 +1,7 @@
 Summary: A set of tools to gather troubleshooting information from a system
 Name: sos
 Version: 2.2
-Release: 6
+Release: 7
 Group: System/Base
 Source0: https://fedorahosted.org/releases/s/o/sos/%{name}-%{version}.tar.gz
 Source100:	sos.rpmlintrc
