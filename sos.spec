@@ -3,11 +3,11 @@ Name:		sos
 Version:	3.2
 Release:	1
 Group:		System/Base
-Source0:	https://fedorahosted.org/releases/s/o/sos/%{name}-%{version}.tar.gz
+Source0:	https://github.com/sosreport/sos/archive/%{name}-%{version}.tar.gz
 Source100:	sos.rpmlintrc
 License:	GPLv2+
 BuildArch:	noarch
-Url:		http://fedorahosted.org/sos
+Url:		https://github.com/sosreport/sos
 BuildRequires:	python-devel
 BuildRequires:	gettext
 Requires:	libxml2-python
