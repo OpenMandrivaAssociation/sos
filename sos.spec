@@ -1,7 +1,7 @@
 Summary:	A set of tools to gather troubleshooting information from a system
 Name:		sos
-Version:	2.2
-Release:	13
+Version:	3.2
+Release:	1
 Group:		System/Base
 Source0:	https://fedorahosted.org/releases/s/o/sos/%{name}-%{version}.tar.gz
 Source100:	sos.rpmlintrc
@@ -33,7 +33,7 @@ make
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
-%doc README TODO LICENSE ChangeLog doc/*
+%doc README.md LICENSE docs/*
 %{_sbindir}/sosreport
 %{_datadir}/%{name}
 %{py_puresitedir}/*
