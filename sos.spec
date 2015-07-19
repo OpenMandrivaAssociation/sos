@@ -1,7 +1,7 @@
 Summary:	A set of tools to gather troubleshooting information from a system
 Name:		sos
 Version:	3.2
-Release:	1
+Release:	2
 Group:		System/Base
 Source0:	https://github.com/sosreport/sos/archive/%{name}-%{version}.tar.gz
 Source100:	sos.rpmlintrc
