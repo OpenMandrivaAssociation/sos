@@ -8,6 +8,7 @@ Source100:	sos.rpmlintrc
 License:	GPLv2+
 BuildArch:	noarch
 Url:		https://github.com/sosreport/sos
+BuildRequires:	make
 BuildRequires:	python-devel
 BuildRequires:	gettext
 Requires:	libxml2-python
